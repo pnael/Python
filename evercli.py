@@ -8,3 +8,9 @@ client = EvernoteClient(token=dev_token)
 userStore = client.get_user_store()
 user = userStore.getUser()
 print user.username
+
+note_store = client.get_note_store()
+# Make API calls
+notebooks = note_store.listNotebooks()
+for notebook in notebooks:
+    print "Notebook: ", notebook.name 
