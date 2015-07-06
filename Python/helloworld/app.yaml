@@ -1,0 +1,11 @@
+application: helloworld
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets/(.*)
+  static_files: stylesheets/\1
+  upload: stylesheets/(.*) 
+- url: /.*
+  script: helloworld.py

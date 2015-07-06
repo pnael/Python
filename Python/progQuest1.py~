@@ -1,0 +1,20 @@
+﻿#!/usr/bin/env python
+
+import sys
+
+a=[]
+
+f= open("IntegerArray.txt","r")
+lines = f.readlines()
+for line in lines:
+    t = int(line)
+    a.append(t)
+
+i=j=nbi=0
+
+for i in range(len(a)):
+        for j in range(i+1,len(a)):
+            if a[i]>a[j]:
+                nbi=nbi+1
+
+print nbi
