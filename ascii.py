@@ -12,7 +12,6 @@ import re
 from optparse import OptionParser
 
 def main():
-
 /// test
 	if not sys.argv[1:]:
 		sys.stdout.write("Sorry: you must specify at least an argument, ")
