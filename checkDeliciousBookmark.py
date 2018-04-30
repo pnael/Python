@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
@@ -8,13 +8,13 @@ import requests
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         print_tag = False
-	for attr in attrs:
-		if attr[0] == 'href':
-			try:
+	       for attr in attrs:
+	              if attr[0] == 'href':
+			         try:
 				#print "Trying ",attr[1]
 				res = requests.get(attr[1])
 			except:
-                                print "Error on : ", attr[1] 
+                                print "Error on : ", attr[1]
                                 print_tag=True
                 if print_tag and attr[0] == 'tags':
                         print 'tags: ', attr[1]
