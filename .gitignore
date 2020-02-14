@@ -1,0 +1,6 @@
+*.pyc
+*.py~
+*.glade~
+.gitignore
+config.py
+venv/

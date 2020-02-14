@@ -1,0 +1,13 @@
+checkdup takes one folder as a parameter. It then browse the whole folder and subdirectories (option)
+to check all the files. As soon as a duplicate is found both path are sent to stdout
+
+Nouns :
+folder
+	browse
+subdirectory
+	browse
+file
+	get unique description
+	path
+duplicate
+
