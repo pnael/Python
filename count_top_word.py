@@ -2,14 +2,26 @@
 # -*- coding: utf-8 -*-
 
 import re
-
+import sys
 
 if __name__=="__main__":
-    filename = '135-0.txt'
+
+    if len(sys.argv) == 2:
+        filename = sys.argv[1]
+    else:
+        sys.stderr.write("Need a text filename\n")
+        sys.exit(1)
+        
     nbmots={}
     
     # Ouverture du fichier
-    file = open(filename,'r')
+    try:
+        file = open(filename, 'r')
+
+    except FileNotFoundError:
+            sys.stderr.write(filename + " not found\n")
+            sys.exit(1)
+        
     lines = file.readlines()
 
     #Lecture ligne par ligne
