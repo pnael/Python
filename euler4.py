@@ -13,7 +13,7 @@ def isPalindrome(s):
         return False
 
     #We should never reach here
-    print "error in isPalindrome"
+    print("error in isPalindrome"=
     return False
 
 
