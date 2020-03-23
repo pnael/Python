@@ -8,5 +8,3 @@ for i in range(254):
     response = os.system("ping -c 1 " + ip+">/dev/null 2>&1")
     if response == 0:
         print(ip, 'is up!')
-    else:
-        print(ip, 'is down!')
