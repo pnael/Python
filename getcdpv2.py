@@ -102,7 +102,7 @@ def	cisco_connect(switchip, user, password, debug):
 def main():
 	# Usual verifications and warnings
 	user = "naelp"
-	password = "stock01"
+	password = "xxx"
 	
 	if not sys.argv[1:]:
 		sys.stdout.write("Sorry: you must specify at least an argument")

@@ -62,7 +62,7 @@ def print_neighbours(tn,debug,level=0):
 		
 def	cisco_connect(switchip,debug):
 	user = "naelp"
-	password = "stock01"
+	password = "xxx"
 	
 	tn = telnetlib.Telnet(switchip)
 	tn.read_until("Username: ")
@@ -85,7 +85,7 @@ def	cisco_connect(switchip,debug):
 def main():
 	# Usual verifications and warnings
 	user = "naelp"
-	password = "stock01"
+	password = "xxx"
 	
 	if not sys.argv[1:]:
 		sys.stdout.write("Sorry: you must specify at least an argument")
