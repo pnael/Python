@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Petit programme qui calcule la suite de Fibonacci
 
 a,b = 0,1
