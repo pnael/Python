@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import turtle
 
 def left_triangle(length):

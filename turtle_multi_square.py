@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # we need the turtle module
 import turtle
 
