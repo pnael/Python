@@ -14,6 +14,14 @@ if __name__=="__main__":
     c = None
     d = None
     e = None
+    f = None
+    g = None
+    h = None
+    i = None
+    j = None
+    k = None
+    l = None
+    m = None
     max = -1
 
     while s :
@@ -23,13 +31,21 @@ if __name__=="__main__":
             c=int(s[2])
             d=int(s[3])
             e=int(s[4])
+            f=int(s[5])
+            g=int(s[6])
+            h=int(s[7])
+            i=int(s[8])
+            j=int(s[9])
+            k=int(s[10])
+            l=int(s[11])
+            m=int(s[13])
         except:
             break
 
-        r= a*b*c*d*e
+        r= a*b*c*d*e*f*g*h*i*j*k*l*m
         if r>max:
             max=r
-        print(a,b,c,d,e,r)
+        print(a,b,c,d,e,f,g,h,i,j,k,l,m,r)
         s=s[1:]
 
 
