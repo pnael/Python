@@ -38,7 +38,7 @@ if __name__=="__main__":
             j=int(s[9])
             k=int(s[10])
             l=int(s[11])
-            m=int(s[13])
+            m=int(s[12])
         except:
             break
 

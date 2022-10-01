@@ -22,6 +22,7 @@ if __name__=="__main__":
             if c>=500:
                 print("Found ",t)
                 found=True
+                break
         if i % 100 == 0:
             print(i,t,c)
         i=i+1

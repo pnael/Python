@@ -13,4 +13,4 @@ if __name__=="__main__":
             except IndexError:
                 m.append(1)
         n.append(m)
-    print n
+    print(n)
